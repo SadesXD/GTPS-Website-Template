@@ -1,0 +1,195 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description" content="Growtopia Private Server Website">
+    <meta name="keywords" content="gtps, Growtopia, GTPS">
+
+    <meta property="og:title" content="Growtopia Private Server"/>
+    <meta property="og:description" content="Growtopia Private Server Website"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>GTPS Website</title>
+</head>
+<body>
+    <div id="home">
+        <header class="header">
+            <a href="#" id="logo"></a>
+            <ul>
+                <li><a href="#home" class="navLink">Home</a></li>
+                <li><a href="#about" class="navLink">About</a></li>
+                <li><a href="#feature" class="navLink">Feature</a></li>
+                <li><a href="#tutorial" class="navLink">Tutorial</a></li>
+            </ul>
+            <div class="burger" onclick="buttonClick()"><i class="fas fa-bars"></i></div>
+        </header>
+
+        <div class="describe">
+            <h1 class="serverName"></h1>
+            <p id="serverDescription"></p>
+            <div class="link">
+                <a href="#" class="discordLink">Join Discord Server</a>
+                <a href="#tutorial">How To Play</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="about">
+        <div class="inform">
+            <h1><span id="singleA">A</span>bout Us</h1>
+            <p id="aboutDesc">Server is created by <span id="owner"></span></p>
+            <ul>
+                <!-- About Area -->
+
+                <!-- List 1 -->
+                <li>
+                    <i class="fas fa-user-friends"></i>
+                    <p>We're a Good Community</p>
+                </li>
+
+                <!-- List 2 -->
+                <li>
+                    <i class="far fa-clock"></i>
+                    <p>We're is active server</p>
+                </li>
+
+                <!-- List 3 -->
+                <li>
+                    <i class="fas fa-server"></i>
+                    <p>We have a special feature</p>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="feature">
+        <div class="fitur">
+            <h1><span id="singleF">F</span>eature</h1>
+            <div id="featureDesc">Our Feature</div>
+            <ul>
+                <!-- Feature Area / List of feature -->
+
+                <!-- Feature 1 -->
+                <li>
+                    <h1>01</h1>
+                    <p>New player auto get gems</p>
+                </li>
+
+                <!-- Feature 2 -->
+                <li>
+                    <h1>02</h1>
+                    <p>We have 20+ player onlines</p>
+                </li>
+
+                <!-- Feature 3 -->
+                <li>
+                    <h1>03</h1>
+                    <p>We're a good community</p>
+                </li>
+
+                <!-- Feature 4 -->
+                <li>
+                    <h1>04</h1>
+                    <p>Cheap role prices</p>
+                </li>
+                
+                <!-- Feature 5 -->
+                <li>
+                    <h1>05</h1>
+                    <p>Always update to new growtopia version</p>
+                </li>
+                
+                <!-- Feature 6 -->
+                <li>
+                    <h1>06</h1>
+                    <p>Daily updates for new feature</p>
+                </li>                
+            </ul>
+        </div>
+    </div>
+
+    <div id="tutorial">
+        <div class="play">
+            <h1 id="tutorialHt"><span>H</span>ow To Play</h1>
+            <div id="playAbout">Tutorial how to play <span class="serverName"></span> in your device</div>
+            <input type="text" id="copyFrom" name="" value="" style="position: absolute; left: -500%;">
+
+            <ul>
+                <li>
+                    <img src="img/android.png" alt="phone">
+                    <section class="text">
+                        <h1>ANDROID</h1>
+                        <p>1. Download and install the latest version of Growtopia from Google Play. <br>
+                            2. Open Growtopia and log in to get your items updated. <br>
+                            3. Download the hosts file below. <br>
+                            4. Open Virtual Hosts and tap on <span>Select Host File</span> and select the file you just downloaded. <br>
+                            5. Turn the switch on and log in to Growtopia.</p>
+    
+                        <div class="buttonLink">
+                            <a href="#" id="hostLink">Download host</a>
+                            <a href="https://www.mediafire.com/file/19do699o9dz6r61/Virtual_Hosts_2.0.2.apk/file">Download Virtual Host</a>
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <img src="img/window.png" alt="window">
+                    <section class="text">
+                        <h1>PC</h1>
+                        <p>1. Open notepad as administrator <br>
+                            2. Click on <span>File</span> and select <span>Open</span> <br>
+                            3. Go to path <span>C:\Windows\System32\drivers\etc</span> and open <span>Hosts</span> file <br>
+                            4. Add the server ip in thats file, Like this: <br>
+                            <span>Server Ip Address</span> growtopia1.com <br>
+                            <span>Server Ip Address</span> growtopia2.com <br>
+                            5. Click <span>File</span> and select <span>Save</span> <br>
+                            6. Now log in to Growtopia
+                        </p>
+                        <div class="buttonLink">
+                            <h2 onclick="copyIp('1')">Copy ip address</h2>
+                            <h3 class="h3Copy">You Copy the ip address</h3>
+                        </div>
+                    </section>
+                </li>
+
+                <!-- IOS Version -->
+
+                <li> 
+                    <img src="img/apple.png" alt="ios">
+                    <section class="text">
+                        <h1>IOS</h1>
+                        <p>1. Go to the App Store and download/install <span>Surge 4</span>. <br>
+                            2. Once installed. Open the application. <br>
+                            3. One it opens. Click the <span>Start</span> or <span>Setup</span> Button on top right. <br>
+                            4. Scroll down and find <span>DNS</span>. Choose <span>Local Mapping</span>. <br>
+                            5. Click on <span>Add New</span>. <br>
+                            6. Put <span>growtopia1.com</span> on Domain and Put [ <span class="iosIp">ip address</span> ] on Value. <br>
+                            7. Click Done on top right <br>
+                            8. Click on <span>Add New</span>. <br>
+                            9. Put <span>growtopia2.com</span> on Domain and Put [ <span class="iosIp">ip address</span> ] on Value. <br>
+                            10. Click Done on top right <br>
+                            11. Done! Now you can open Growtopia</p>
+                        <div class="buttonLink">
+                            <h2 onclick="copyIp('2')">Copy ip address</h2>
+                            <h3 class="h3Copy">You Copy the ip address</h3>
+                        </div>
+                    </section>
+                </li>
+                <!-- ^^ Ios Version -->
+
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <p id="serverFooter"></p>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="src/index.js"></script>
+</body>
+</html>
