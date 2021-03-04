@@ -2,7 +2,7 @@ function buttonClick() {
     let nav = document.querySelector('.header');
     let burger = document.querySelector('.burger');
     let bodys = document.querySelector('body')
-    if(bodys.style.overflow === "hidden") {
+    if(bodys.style.overflow === "hidden") {    
         bodys.style.overflow = "unset";
     } else {
         bodys.style.overflow = "hidden";
@@ -39,10 +39,12 @@ window.addEventListener('scroll', () => {
 navbarLink.forEach(nav => {
     nav.addEventListener('click', () => {
         let bodys = document.querySelector('body')
-        if(bodys.style.overflow === "hidden") {
-            bodys.style.overflow = "unset";
-        } else {
-            bodys.style.overflow = "hidden";
+        let navCheck = navbar.className.split(" ")
+
+        if(navCheck.some(m => m === "nav")) {
+            if(bodys.style.overflow === "hidden") {
+                bodys.style.overflow = "unset";
+            }
         }
         navbar.classList.remove('nav')
         document.querySelector('.burger').classList.remove('burgerActive');
